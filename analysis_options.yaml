@@ -1,4 +1,13 @@
 include: package:flutter_lints/flutter.yaml
 
-# Additional information about this file can be found at
-# https://dart.dev/guides/language/analysis-options
+linter:
+  rules:
+    - require_trailing_commas
+    - prefer_single_quotes
+    - prefer_const_declarations
+    - prefer_final_in_for_each
+    - prefer_iterable_whereType
+    - always_declare_return_types
+    - prefer_const_constructors_in_immutables
+    - prefer_const_literals_to_create_immutables
+
