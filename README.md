@@ -4,7 +4,7 @@
 or OTPs in a user-friendly and secure manner. This package's features and customization options make
 it ideal for applications requiring secure entry, such as authentication forms.
 
-<img src="https://github.com/tajaouart/animated_pin_input_text_field/blob/master/animated_pin_input_text_field.gif" height="600"/>
+<img src="https://raw.githubusercontent.com/tajaouart/animated_pin_input_text_field/master/animated_pin_input_text_field.gif" height="600"/>
 
 ## Short Description
 
