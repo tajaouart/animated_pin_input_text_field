@@ -1,39 +1,77 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# PinInputTextField Package
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+`PinInputTextField` is a Flutter widget designed for inputting PINs
+or OTPs in a user-friendly and secure manner. This package's features and customization options make
+it ideal for applications requiring secure entry, such as authentication forms.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+<img src="https://raw.githubusercontent.com/tajaouart/animated_pin_input_text_field/main/animated_pin_input_text_field.gif" height="600"/>
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+## Short Description
+
+The `PinInputTextField` widget provides a customizable and easy-to-use PIN or OTP input field
+focusing on security and usability. It is perfect for forms where secure input is needed, such as
+authentication forms.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- **Customizable Length**: Easily set the pin length to suit your application's needs.
+- **Obscured Input**: Option to obscure the input with a customizable character for added security.
+- **Auto-focus**: Automatic focusing on the next field for a smoother user experience.
+- **Customizable Appearance**: Adjust the border radius, padding, colors, and more to fit the look
+  and feel of your app.
+- **Flexible Box Shapes**: Choose from different box shapes for your PIN input fields, enhancing the
+  visual appeal.
 
-## Getting started
+## Getting Started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+To start using the `PinInputTextField` package in your Flutter project, add it to
+your `pubspec.yaml` file:
+
+```yaml
+dependencies:
+  pin_input_text_field: any
+```
+
+Then, run `flutter pub get` in your terminal to install the package.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Here's a simple example to get you started with `PinInputTextField`:
 
 ```dart
-const like = 'sample';
+import 'package:flutter/material.dart';
+import 'package:pin_input_text_field/pin_input_text_field.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: PinInputTextField(
+            pinLength: 4,
+            onChanged: (pin) {
+              print('Pin changed to: $pin');
+            },
+          ),
+        ),
+      ),
+    );
+  }
+}
 ```
 
-## Additional information
+For more examples, see the `/example` folder in the package.
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+## Additional Information
+
+For more information on the `PinInputTextField` package, including how to contribute, file issues,
+or if you need support, please visit
+our [GitHub repository](https://github.com/tajaouart/animated_pin_input_text_field).
+
+Contributions are welcome!
+
+For any questions or issues, feel free to file an issue on the GitHub repository, and we'll respond
+as soon as possible.
